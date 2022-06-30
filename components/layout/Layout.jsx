@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
-import layout from '../content/layout.json'
+import layout from '../../content/layout.json'
 
 const Layout = ({ children }) => {
   return (
