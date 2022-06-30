@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
 
       <main>{children}</main>
 
-      <footer>
+      <footer className="text-small font-light text-center m-4 absolute bottom-0">
         <p>{layout.copyright}</p>
       </footer>
     </>
