@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import layout from '../../content/layout.json'
+import Menu from './Menu'
 
 const Layout = ({ children }) => {
   return (
@@ -10,6 +11,10 @@ const Layout = ({ children }) => {
         <meta name="description" content={layout.metaContent} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <nav>
+        <Menu />
+      </nav>
 
       <main>{children}</main>
 
