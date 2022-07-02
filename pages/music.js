@@ -1,3 +1,9 @@
+import SocialLinks from '../components/SocialLinks'
+
 export default function Musik() {
-  return <div>MUSIK</div>
+  return (
+    <div>
+      <SocialLinks />
+    </div>
+  )
 }
