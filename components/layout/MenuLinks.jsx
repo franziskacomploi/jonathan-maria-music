@@ -7,11 +7,11 @@ const MenuLinks = ({ className }) => {
       <Link href="/">
         <a className="m-2">ABOUT</a>
       </Link>
-      <Link href="/">
-        <a className="m-2">MUSIK</a>
+      <Link href="/music">
+        <a className="m-2">MUSIC</a>
       </Link>
-      <Link href="/">
-        <a className="m-2">KONTAKT</a>
+      <Link href="/contact">
+        <a className="m-2">CONTACT</a>
       </Link>
     </div>
   )
