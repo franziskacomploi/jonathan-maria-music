@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,vue,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
+    './app.vue',
   ],
   theme: {
     fontFamily: {
@@ -10,7 +14,11 @@ module.exports = {
       serif: ['Noticia Text', 'Times', 'serif'],
       mono: ['"Roboto Mono"', '"Courier New"', 'monospace'],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'about': "url('/assets/david-martin-6NpYOFB3VCI-unsplash.jpeg')",
+      },
+    },
   },
   plugins: [],
-}
+};
