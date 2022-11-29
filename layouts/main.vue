@@ -17,7 +17,7 @@
     <footer
       class="relative text-small font-light text-center m-4 absolute bottom-0"
     >
-      <p>{layout.copyright}</p>
+      <p>{{ layout.copyright }}</p>
     </footer>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero />
-    <p class="my-10 text-center">{contact.contact}</p>
+    <p class="my-10 text-center">{{ contact.contact }}</p>
   </div>
 </template>
 

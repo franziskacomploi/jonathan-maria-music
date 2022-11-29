@@ -9,7 +9,16 @@ module.exports = {
     './app.vue',
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ['Raleway', 'Arial', 'sans-serif'],
+      serif: ['Noticia Text', 'Times', 'serif'],
+      mono: ['"Roboto Mono"', '"Courier New"', 'monospace'],
+    },
+    extend: {
+      backgroundImage: {
+        'about': "url('/assets/david-martin-6NpYOFB3VCI-unsplash.jpeg')",
+      },
+    },
   },
   plugins: [],
 };

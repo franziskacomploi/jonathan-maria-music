@@ -1,20 +1,17 @@
 <template>
   <template v-if="active">
     <button type="button" @click="handleClick">
-      <img :width="size" :height="size" :src="icon" :alt="alt" />
+      <img :src="icon" class="w-[20px] h-[20px]" :alt="alt" />
     </button>
   </template>
 </template>
 
 <script lang="ts" setup>
-import about from '~/content/about.json';
-
 defineProps({
   handleClick: { type: Object as () => void, required: true },
-  icon: Object,
-  alt: String,
-  size: Number,
-  active: Boolean,
+  icon: { type: String, required: true },
+  alt: { type: String, default: 'arrow-button' },
+  active: { type: Boolean, default: false },
 });
 </script>
 

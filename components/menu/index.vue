@@ -5,12 +5,11 @@
         v-if="isMenuOpen"
         :active="isMenuOpen"
         :handleClick="handleClick"
-        :icon="ArrowLeft"
-        :alt="hamburger - menu"
-        :size="20"
+        :icon="arrowLeft"
+        alt="close hamburger menu"
       />
       <button v-else type="button" @click="handleClick">
-        <img width="40" height="40" src="hamburgerIcon" alt="hamburger-menu" />
+        <img :src="hamburgerIcon" class="w-[40px] h-[40px]" alt="close menu" />
       </button>
     </div>
 
@@ -25,7 +24,8 @@
 </template>
 
 <script lang="ts" setup>
-// import hamburgerIcon from '~/assets/hamburger.svg';
+import arrowLeft from '~/assets/arrow-left.svg';
+import hamburgerIcon from '~/assets/hamburger.svg';
 
 const isMenuOpen = ref<boolean>(false);
 
