@@ -1,20 +1,14 @@
-# Nuxt 3 Minimal Starter
+# Jonathan Maria Music
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A private website project.
 
 ## Setup
 
-Make sure to install the dependencies:
+Make sure to install the dependencies by using npm:
 
 ```bash
-# yarn
-yarn install
-
 # npm
 npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
 ## Development Server
