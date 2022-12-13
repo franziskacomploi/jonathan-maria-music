@@ -12,14 +12,13 @@ import about from '~/content/about.json';
 .drums {
   background-position: bottom;
   background-size: cover;
-  @apply relative bg-fixed w-full h-[350px] md:h-[500px];
+  @apply flex flex-row justify-center items-center bg-fixed w-full h-[350px] md:h-[500px];
 }
 
 .about-text {
-  @apply absolute md:inset-x-1/3
-      mx-6 mt-20 p-4
-      bg-white drop-shadow-xl overflow-hidden rounded-lg
-      max-w-lg md:max-w-xl max-h-[300px]
+  @apply p-4
+      bg-white drop-shadow-xl overflow-scroll md:overflow-hidden rounded-lg
+      w-[300px] md:w-[450px] h-[200px] md:h-[400px]
       text-center text-lg font-light;
 }
 </style>
