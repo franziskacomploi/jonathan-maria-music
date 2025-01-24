@@ -2,9 +2,6 @@
   <div
     class="relative my-10 w-full flex flex-row justify-center items-center gap-4"
   >
-    <a href="https://www.instagram.com/nikicomploi/" target="_blank">
-      <img class="w-[40px] h-[40px]" :src="instagram" alt="instagram-icon" />
-    </a>
     <a href="https://soundcloud.com/nikolauscomploi" target="_blank">
       <img class="w-[40px] h-[40px]" :src="soundcloud" alt="soundcloud-icon" />
     </a>
@@ -24,7 +21,6 @@
 </template>
 
 <script lang="ts" setup>
-import instagram from '~/assets/social-icons/instagram-64.png';
 import soundcloud from '~/assets/social-icons/soundcloud-50.png';
 import spotify from '~/assets/social-icons/spotify-50.png';
 import applemusic from '~/assets/social-icons/apple-music-48.png';

@@ -1,11 +1,5 @@
 <template>
   <div>
-    <head>
-      <title>{{ layout.metaTitle }}</title>
-      <meta name="description" content="{{layout.metaContent}}" />
-      <link rel="icon" href="/favicon.ico" />
-    </head>
-
     <nav>
       <Menu />
     </nav>
@@ -24,6 +18,12 @@
 
 <script lang="ts" setup>
 import layout from '~/content/layout.json';
+
+useHead({
+  title: layout.metaTitle,
+  meta: [{ name: 'description', content: layout.metaContent }],
+  link: [{ rel: 'icon', href: '/favicon.ico' }],
+});
 </script>
 
 <style lang="postcss" scoped></style>
